@@ -8,10 +8,10 @@
      var port = 9000;
     // ruteo
     app.get('/', function(req, res){
-      res.sendfile(__dirname + 'index.html');
+      res.sendfile(__dirname + './index.html');
     });
     app.get('/about', function(req, res){
-      res.sendfile(__dirname + 'quienes_somos.html');
+      res.sendfile(__dirname + './quienes_somos.html');
     });
      
     // escuchar
