@@ -5,7 +5,7 @@
      
     // instanciar
     var app = express();
-     
+     var port = 9000;
     // ruteo
     app.get('/', function(req, res){
       res.sendfile(__dirname + 'index.html');
@@ -15,6 +15,6 @@
     });
      
     // escuchar
-    app.listen(9000);
+    app.listen(port);
      
     console.log("Servidor Express escuchando en modo %s", app.settings.env);
